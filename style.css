@@ -1,0 +1,304 @@
+body {
+    background-color: hsl(0, 0%, 98%);
+    padding: 0 10px;
+}
+
+.navbar__main {
+    display: flex;
+    margin-top: 30px;
+}
+
+.navbar__main a {
+    color: gray;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.navbar__login {
+    margin-left: auto;
+}
+
+.navbar__toggle {
+    display: none;
+}
+
+.navbar__features:hover {
+    cursor: pointer;
+}
+
+.navbar__company:hover {
+    cursor: pointer;
+}
+
+.navbar__main a:hover {
+    color: black;
+}
+
+.navbar__options {
+    display: flex;
+    margin-left: 30px;
+}
+
+.navbar__options > a {
+    margin-top: 5px;
+}
+
+.collapsing__navbar {
+    display: flex;
+    justify-content: space-between;
+    width:  100%;
+}
+
+.collapsing__navbar > img {
+    display: none;
+}
+
+.navbar__register {
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+    margin-right: 50px;
+}
+
+#dropDown__active {
+    display: none;
+}
+
+.features__dropDown {
+    list-style: none;
+    position: absolute;
+    padding: 0.5rem 0;
+    top: 2.75rem;
+    border-radius: 8px;
+    z-index: 9;
+    width: 130px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 2rem rgb(0 0 0 / 10%);
+}
+
+.dropDown__item {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.features__dropDown a {
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+}
+
+.company__dropDown {
+    list-style: none;
+    position: absolute;
+    padding: 0.5rem 0;
+    top: 2.75rem;
+    border-radius: 8px;
+    z-index: 9;
+    width: 90px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 0 2rem rgb(0 0 0 / 10%);
+    margin-left: 40px;
+}
+
+.company__dropDown a {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+    margin-left: 0;
+}
+
+.company__item {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.reminder__item {
+    padding-left: 5px;
+}
+
+#dropDown__activeCompany {
+    display: none;
+}
+
+.center__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.body__wrapper {
+    display: flex;
+    width: 60%;
+}
+
+.body__text > h1 {
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Epilogue', sans-serif;
+    margin-top: 150px;
+}
+
+.body__text > p {
+    color: hsl(0, 0%, 41%);
+    font-size: 18px;
+    font-weight: 500;
+    width: 70%;
+    line-height: 25px;
+    font-family: 'Epilogue', sans-serif;
+    margin-bottom: 60px;
+}
+
+.body__text > a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    width: 15%;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.body__text > a:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    font-weight: 600;
+}
+
+.gray__images {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+
+
+.body__image > img {
+    width: 500px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media (max-width: 768px) {
+    .navbar__main {
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+    }
+
+    .navbar__toggle {
+        display: block;
+    }
+
+    .navbar__options {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .center__container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .body__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .body__text {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .body__text > h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .body__text > p {
+        text-align: center;
+        width: 90%;
+    }
+
+    .body__text > a {
+        font-size: 14px;
+        width: 80px;
+        font-weight: 400;
+    }
+
+    .body__image > img {
+        content: url("./images/image-hero-mobile.png");
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .navbar__login {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: auto;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .navbar__register {
+        text-align: center;
+        width: 150px;
+        margin-left: 82px !important;
+    }
+
+    .collapsing__navbar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 300px;
+        width: 60%;
+        height:100%;
+        background-color: white;
+        padding-top: 60px;
+    }
+
+    #collapsing__navbar {
+        display: none;
+    }
+
+    .collapsing__navbar a {
+        margin-top: 20px;
+    }
+
+    .collapsing__navbar > img {
+        height: 20px;
+        width: 20px;
+        margin-left: auto;
+        margin-right: 25px;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+
+    .navbar__toggle {
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .navbar__company {
+        margin-top: 20px;
+    }
+}
+
